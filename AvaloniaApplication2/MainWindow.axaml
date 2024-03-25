@@ -1,0 +1,30 @@
+<Window xmlns="https://github.com/avaloniaui"
+		xmlns:pages="using:AvaloniaApplication2.Pages"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaApplication2.MainWindow"
+        Title="AvaloniaApplication2">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition/>
+			<RowDefinition Height="auto"/>
+		</Grid.RowDefinitions>
+		<ContentControl x:Name="CCMainFrame"/>
+		<StackPanel Orientation="Horizontal"
+					Grid.Row="1"
+					Spacing="10"
+					Margin="5"
+					Height="60">
+			<Button x:Name="BPage1"
+					Content="Page 1"
+					Click="Page1_Click"/>
+			<Button x:Name="BPage2"
+					Content="Page 2"
+					Click="Page2_Click"/>
+		</StackPanel>
+
+	</Grid>
+   
+</Window>
